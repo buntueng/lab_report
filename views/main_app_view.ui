@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_app_view</class>
+ <widget class="QMainWindow" name="main_app_view">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1283</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Report generator</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources/resource_file.qrc">
+    <normaloff>:/icons/icons/report.png</normaloff>:/icons/icons/report.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="page_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>128</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(33, 200, 255);
+}</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Laboratory report</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>94</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="add_figure_pushButton">
+       <property name="text">
+        <string>Add Figure</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources/resource_file.qrc">
+         <normaloff>:/icons/icons/add-image.png</normaloff>:/icons/icons/add-image.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="description_pushButton">
+       <property name="text">
+        <string>Description</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources/resource_file.qrc">
+         <normaloff>:/icons/icons/messages_white.png</normaloff>:/icons/icons/messages_white.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>108</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="confirm_report_pushButton">
+       <property name="text">
+        <string>Confirm Report</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources/resource_file.qrc">
+         <normaloff>:/icons/icons/notifications_white.png</normaloff>:/icons/icons/notifications_white.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>28</width>
+         <height>338</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="sign_out_pushButton">
+       <property name="text">
+        <string>Sign Out</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources/resource_file.qrc">
+         <normaloff>:/icons/icons/log_out_white.png</normaloff>:/icons/icons/log_out_white.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>1131</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1111</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: rgb(50, 50, 255);
+}
+QPushButton{
+color: rgb(0, 0,0);
+background-color: rgb(50, 255, 50);
+}
+
+QLabel{
+	color: rgb(255, 255, 255);
+}
+QLineEdit{
+	background-color: rgb(255, 255, 255);
+}
+
+QTextEdit{
+background-color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <widget class="QLabel" name="case_number_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Case Number</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="case_number_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>10</y>
+        <width>121</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="case_info_textEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>1091</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="search_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>10</y>
+        <width>75</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTextEdit" name="report_textEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>1111</width>
+       <height>601</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1283</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCreate_Report">
+    <property name="title">
+     <string>Create Report</string>
+    </property>
+    <addaction name="actionCytology_Report"/>
+    <addaction name="actionNecropsy_Report"/>
+   </widget>
+   <widget class="QMenu" name="menuManage_Report">
+    <property name="title">
+     <string>Load and Save</string>
+    </property>
+    <addaction name="actionSave_on_This_PC"/>
+    <addaction name="actionLoad_from_this_PC"/>
+    <addaction name="actionSave_on_Server"/>
+    <addaction name="actionLoad_from_Server"/>
+   </widget>
+   <addaction name="menuCreate_Report"/>
+   <addaction name="menuManage_Report"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCytology_Report">
+   <property name="text">
+    <string>Cytology Report</string>
+   </property>
+  </action>
+  <action name="actionNecropsy_Report">
+   <property name="text">
+    <string>Necropsy Report</string>
+   </property>
+  </action>
+  <action name="actionSave_on_This_PC">
+   <property name="text">
+    <string>Save on This PC</string>
+   </property>
+  </action>
+  <action name="actionSave_on_Server">
+   <property name="text">
+    <string>Save on Server</string>
+   </property>
+  </action>
+  <action name="actionLoad_from_this_PC">
+   <property name="text">
+    <string>Load from this PC</string>
+   </property>
+  </action>
+  <action name="actionLoad_from_Server">
+   <property name="text">
+    <string>Load from Server</string>
+   </property>
+  </action>
+  <action name="actionConfirm_Report">
+   <property name="text">
+    <string>Confirm Report</string>
+   </property>
+  </action>
+  <action name="actionApprove_Report">
+   <property name="text">
+    <string>Approve Report</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resources/resource_file.qrc"/>
+ </resources>
+ <connections/>
+</ui>

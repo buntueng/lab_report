@@ -1,0 +1,38 @@
+2024-02-13 22:24:42,440 - __main__ - INFO - Starting the application
+2024-02-13 22:24:52,513 - __main__ - INFO - Starting the application
+2024-02-13 22:25:15,549 - __main__ - INFO - Starting the application
+2024-02-13 22:28:44,383 - __main__ - INFO - Starting the application
+2024-02-13 22:29:28,925 - __main__ - INFO - Starting the application
+2024-02-14 00:00:30,612 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 00:01:24,316 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 00:01:57,631 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 00:12:08,922 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 01:10:56,072 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 01:11:00,177 - debugging.debug_logging - INFO - Authenticating user
+2024-02-14 01:13:19,082 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 01:13:24,915 - debugging.debug_logging - INFO - Authenticating user
+2024-02-14 01:15:30,438 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 01:15:34,137 - debugging.debug_logging - INFO - Authenticating user
+2024-02-14 01:16:07,153 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 01:16:11,018 - debugging.debug_logging - INFO - Authenticating user
+2024-02-14 01:17:08,376 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 01:17:12,593 - debugging.debug_logging - INFO - Authenticating user
+2024-02-14 01:18:01,519 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 01:18:05,191 - debugging.debug_logging - INFO - Authenticating user
+2024-02-14 01:23:01,346 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 01:23:05,016 - debugging.debug_logging - INFO - Authenticating user
+2024-02-14 01:23:05,051 - debugging.debug_logging - INFO - [(1, 'นาย', 'บรรเทิง', 'ยานะ', 'mr.buntueng@gmail.com', '')]
+2024-02-14 01:33:18,233 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 01:33:23,481 - debugging.debug_logging - INFO - Authenticating user
+2024-02-14 01:35:58,182 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 01:36:01,828 - debugging.debug_logging - INFO - Authenticating user
+2024-02-14 01:36:06,816 - debugging.debug_logging - INFO - Authenticating user
+2024-02-14 01:36:06,856 - debugging.debug_logging - INFO - [(1, 'นาย', 'บรรเทิง', 'ยานะ', 'mr.buntueng@gmail.com', '')]
+2024-02-14 09:54:26,053 - debugging.debug_logging - INFO - Starting the application
+2024-02-14 09:54:30,931 - debugging.debug_logging - INFO - Authenticating user
+2024-02-14 09:54:31,130 - debugging.debug_logging - INFO - [(1, 'นาย', 'บรรเทิง', 'ยานะ', 'mr.buntueng@gmail.com', '')]
+2024-02-16 12:09:34,695 - debugging.debug_logging - INFO - Starting the application
+2024-02-16 12:10:08,439 - debugging.debug_logging - INFO - Starting the application
+2024-02-16 12:10:13,824 - debugging.debug_logging - INFO - Authenticating user
+2024-02-16 12:10:14,090 - debugging.debug_logging - INFO - [(1, 'นาย', 'บรรเทิง', 'ยานะ', 'mr.buntueng@gmail.com', '')]
+2024-02-16 12:14:11,339 - debugging.debug_logging - INFO - Starting the application
