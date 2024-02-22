@@ -12,9 +12,7 @@ from debugging.debug_logging import logger
 
 if __name__ == "__main__":
     logger.info('Starting the application')
-
     app = QApplication(sys.argv)
-
     login_view = LoginView()
     main_view = MainView()
     login_model = LoginModel()
