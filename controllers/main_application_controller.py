@@ -15,8 +15,46 @@ class MainApplicationController:
         self.main_view = main_view
         self.session_model = session_model
         self.main_view.add_figure_pushButton.clicked.connect(self.add_figure)
-        self.main_view.description_pushButton.clicked.connect(
-            self.add_description)
+        self.main_view.preview_pushButton.clicked.connect(
+            self.preview_report)
+        self.main_view.new_cytology_pushButton.clicked.connect(
+            self.load_new_cytology_report)
+        self.main_view.new_nocropsy_pushButton.clicked.connect(
+            self.load_new_nocropsy_report)
+        self.main_view.load_report_pushButton.clicked.connect(
+            self.load_report)
+        self.main_view.save_report_pushButton.clicked.connect(
+            self.save_report)
+        self.main_view.confirm_report_pushButton.clicked.connect(
+            self.confirm_report)
+
+        self.main_view.check_report_pushButton.clicked.connect(
+            self.check_report)
+        self.main_view.signout_pushButton.clicked.connect(self.logout)
+
+    def check_report(self) -> None:
+        """Check the report for errors"""
+        print("Checking report")
+
+    def confirm_report(self) -> None:
+        """Confirm the report and save it to the database server"""
+        print("Confirming report")
+
+    def save_report(self) -> None:
+        """ save report to database server"""
+        print("Saving report")
+
+    def load_new_cytology_report(self) -> None:
+        """Load new cytology report template to the main view"""
+        print("Loading new cytology report")
+
+    def load_new_nocropsy_report(self) -> None:
+        """Load new nocropsy report template to the main view"""
+        print("Loading new nocropsy report")
+
+    def load_report(self) -> None:
+        """Load report to the main view using open file dialog"""
+        print("Loading report")
 
     def add_figure(self) -> None:
         """ Add figure to the main view using open file dialog"""
@@ -42,13 +80,13 @@ class MainApplicationController:
                 desired_height = 200
                 self.main_view.report_textEdit.insertHtml(
                     f'<img src="{temp_file_path}" height="{desired_height}"')
-                self.main_view.report_textEdit.insertHtml('<br>')
+                # self.main_view.report_textEdit.insertHtml('<br>')
             else:
                 logger.info("Invalid image file")
         else:
             logger.debug("No file selected")
 
-    def add_description(self):
+    def preview_report(self) -> None:
         """read text from report_textEdit as html and print it to terminal"""
         html_text = self.main_view.report_textEdit.toHtml()
         # html process to get the paragraph text using bs4
@@ -57,7 +95,9 @@ class MainApplicationController:
         for paragraph in paragraphs:
             if paragraph.get_text() == '':
                 if paragraph.find('img'):
-                    print(paragraph.find('img')['src'])
+                    all_img = paragraph.find_all('img')
+                    for img in all_img:
+                        print(img['src'])
             elif paragraph.find('img'):
                 # show QmessageBox remind the user
                 msg = QMessageBox()

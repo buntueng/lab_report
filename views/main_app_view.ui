@@ -85,7 +85,7 @@ QPushButton{
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="description_pushButton">
+      <widget class="QPushButton" name="preview_pushButton">
        <property name="text">
         <string>Preview Report</string>
        </property>
@@ -159,7 +159,7 @@ QPushButton{
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="sign_out_pushButton">
+      <widget class="QPushButton" name="signout_pushButton">
        <property name="text">
         <string>Sign Out</string>
        </property>

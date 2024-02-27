@@ -84,10 +84,10 @@ class Ui_main_app_view(object):
 
         self.verticalLayout.addWidget(self.add_figure_pushButton)
 
-        self.description_pushButton = QPushButton(self.page_widget)
-        self.description_pushButton.setObjectName(u"description_pushButton")
+        self.preview_pushButton = QPushButton(self.page_widget)
+        self.preview_pushButton.setObjectName(u"preview_pushButton")
 
-        self.verticalLayout.addWidget(self.description_pushButton)
+        self.verticalLayout.addWidget(self.preview_pushButton)
 
         self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
@@ -121,13 +121,13 @@ class Ui_main_app_view(object):
 
         self.verticalLayout.addItem(self.verticalSpacer_2)
 
-        self.sign_out_pushButton = QPushButton(self.page_widget)
-        self.sign_out_pushButton.setObjectName(u"sign_out_pushButton")
+        self.signout_pushButton = QPushButton(self.page_widget)
+        self.signout_pushButton.setObjectName(u"signout_pushButton")
         icon2 = QIcon()
         icon2.addFile(u":/icons/icons/log_out_white.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.sign_out_pushButton.setIcon(icon2)
+        self.signout_pushButton.setIcon(icon2)
 
-        self.verticalLayout.addWidget(self.sign_out_pushButton)
+        self.verticalLayout.addWidget(self.signout_pushButton)
 
         self.widget_3 = QWidget(self.centralwidget)
         self.widget_3.setObjectName(u"widget_3")
@@ -195,12 +195,12 @@ class Ui_main_app_view(object):
         self.new_cytology_pushButton.setText(QCoreApplication.translate("main_app_view", u"New Cytology Report", None))
         self.new_nocropsy_pushButton.setText(QCoreApplication.translate("main_app_view", u"New Nocropsy Report", None))
         self.add_figure_pushButton.setText(QCoreApplication.translate("main_app_view", u"Add Figure", None))
-        self.description_pushButton.setText(QCoreApplication.translate("main_app_view", u"Preview Report", None))
+        self.preview_pushButton.setText(QCoreApplication.translate("main_app_view", u"Preview Report", None))
         self.load_report_pushButton.setText(QCoreApplication.translate("main_app_view", u"Load Report", None))
         self.save_report_pushButton.setText(QCoreApplication.translate("main_app_view", u"Save Report", None))
         self.confirm_report_pushButton.setText(QCoreApplication.translate("main_app_view", u"Confirm Report", None))
         self.check_report_pushButton.setText(QCoreApplication.translate("main_app_view", u"Check reports", None))
-        self.sign_out_pushButton.setText(QCoreApplication.translate("main_app_view", u"Sign Out", None))
+        self.signout_pushButton.setText(QCoreApplication.translate("main_app_view", u"Sign Out", None))
         self.case_number_label.setText(QCoreApplication.translate("main_app_view", u"Case Number", None))
         self.search_pushButton.setText(QCoreApplication.translate("main_app_view", u"Search", None))
     # retranslateUi

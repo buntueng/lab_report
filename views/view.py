@@ -53,6 +53,6 @@ class MainView(QMainWindow, Ui_main_app_view):
         self.report_textEdit.setFont(self.report_font)
 
     def __del__(self) -> None:
-        # Remove the temporary directory
-        if os.path.exists(self.temp_dir):
+        # Remove the temporary directory if it is empty
+        if os.path.exists(self.temp_dir) and not os.listdir(self.temp_dir):
             os.rmdir(self.temp_dir)
