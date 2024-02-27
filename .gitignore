@@ -3,4 +3,10 @@ __pycache__/
 *.pyc
 *.yaml
 *.yml
-
+build/
+dist/
+tmp/
+output/
+tmp/
+debugging.log
+*.log

@@ -1,5 +1,6 @@
 """" This module is responsible for handling the views of the application. It connects the views to the models and the controllers."""
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog
+from PySide6.QtWidgets import QLineEdit
 from views.login_view import Ui_login_view
 from views.main_app_view import Ui_main_app_view
 from PySide6.QtGui import QImage
@@ -17,6 +18,8 @@ class LoginView(QMainWindow, Ui_login_view):
         super().__init__()
         self.setupUi(self)
         self.username_lineEdit.setFocus()  # Set focus to username_lineEdit
+        self.password_lineEdit.setEchoMode(
+            QLineEdit.Password)  # Set echo mode to Password
 
     def show_login_error(self) -> None:
         """ Show login error message"""

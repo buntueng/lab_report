@@ -16,3 +16,14 @@
 2024-02-23 02:28:11,592 - debugging.debug_logging - INFO - Starting the application
 2024-02-23 02:28:15,311 - debugging.debug_logging - INFO - Authenticating user
 2024-02-23 02:28:15,357 - debugging.debug_logging - INFO - [(1, 'นาย', 'บรรเทิง', 'ยานะ', 'mr.buntueng@gmail.com', '')]
+2024-02-27 21:29:02,538 - debugging.debug_logging - INFO - Starting the application
+2024-02-27 21:29:08,108 - debugging.debug_logging - INFO - Authenticating user
+2024-02-27 21:29:09,570 - debugging.debug_logging - INFO - [(1, 'นาย', 'บรรเทิง', 'ยานะ', 'mr.buntueng@gmail.com', '')]
+2024-02-27 21:37:58,702 - debugging.debug_logging - INFO - Starting the application
+2024-02-27 21:38:03,645 - debugging.debug_logging - INFO - Authenticating user
+2024-02-27 21:38:03,694 - debugging.debug_logging - INFO - [(1, 'นาย', 'บรรเทิง', 'ยานะ', 'mr.buntueng@gmail.com', '')]
+2024-02-27 21:40:35,694 - debugging.debug_logging - INFO - Starting the application
+2024-02-27 21:40:44,396 - debugging.debug_logging - INFO - Authenticating user
+2024-02-27 21:40:44,435 - debugging.debug_logging - INFO - [(1, 'นาย', 'บรรเทิง', 'ยานะ', 'mr.buntueng@gmail.com', '')]
+2024-02-27 21:40:52,720 - debugging.debug_logging - DEBUG - No file selected
+2024-02-27 23:06:09,573 - debugging.debug_logging - INFO - Starting the application

@@ -1,5 +1,6 @@
 """ Login Model handles the database connection and authentication """
 import os
+import sys
 import yaml
 import mariadb
 from debugging.debug_logging import logger
@@ -18,7 +19,16 @@ class LoginModel:
             with open(config_path, 'r', encoding='utf-8') as yamfile:
                 self.config_params = yaml.safe_load(yamfile)
         else:
-            logger.error("Config file not found")
+            # If the config file is not found in the model folder, try to find it in the same directory as the executable
+            exe_path = sys.executable
+            if exe_path:
+                exe_dir = os.path.dirname(exe_path)
+                config_path = os.path.join(exe_dir, 'config.yml')
+                if os.path.exists(config_path):
+                    with open(config_path, 'r', encoding='utf-8') as yamfile:
+                        self.config_params = yaml.safe_load(yamfile)
+                else:
+                    logger.error("Config file not found")
 
         if len(self.config_params) > 0:
             try:
